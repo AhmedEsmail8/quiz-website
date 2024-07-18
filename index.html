@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>Document</title>
+</head>
+
+<body class="d-flex flex-column justify-content-center align-items-center min-vh-100 vw-100 overflow-hidden">
+    <div class="overflow-hidden rounded-3 mb-5 animate__animated animate__backInDown">
+        <div class="form-title position-relative p-1">
+            <h1 class="bg-white p-3 rounded-3 m-0 position-relative">Quiz App</h1>
+        </div>
+    </div>
+    <div class="container form-container animate__animated animate__fadeInBottomLeft">
+        <form id="formCover">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <select class="form-select" id="category" name="category" aria-label="Floating label select example">
+                                <option selected value="" >Any category</option>
+                                <option value="21">Sports</option>
+                                <option value="25">Art</option>
+                                <option value="27">Animals</option>
+                                <option value="18">Science: Computers</option>
+                                <option value="24">Politics</option>
+                            </select>
+                            <label for="category">Choose Category</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <select class="form-select" id="difficulty" name="difficulty" aria-label="Floating label select example">
+                                <option selected value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                            <label for="difficulty">Choose Difficulty Level</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="questionsNumber" name="questionsNumber" placeholder="name@example.com" required>
+                            <label for="questionsNumber">Number of Questions</label>
+                          </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary w-100">Start</button>
+                    </div>
+                </div>
+        </form>
+        
+    </div>
+
+    <div class="container question-container d-none">
+    </div>
+
+    <div class="score-container animate__animated animate__tada d-none">
+        <div class="bg-white rounded-3 p-4">
+            <h4>Your score is <span id="finalScore">1 of 2</span></h4>
+            <button class="btn btn-primary rounded-pill d-block mt-3 mx-auto" id="tryAgainBtn">Try Again</button>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

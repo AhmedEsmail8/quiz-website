@@ -1,0 +1,30 @@
+/* sm */
+@media (min-width: 576px) {
+    
+}
+
+/* md */
+@media (min-width: 768px) {
+    .form-container,
+    .question-container{
+        width: 75%;
+    }
+}
+
+/* lg */
+@media (min-width: 992px) {
+}
+
+/* xl */
+@media (min-width: 1200px) {
+    .form-container,
+    .question-container{
+        width: 50%;
+    }
+    
+}
+
+/* xxl */
+@media (min-width: 1400px) {
+
+}
